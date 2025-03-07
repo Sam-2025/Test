@@ -2,6 +2,9 @@ pipeline {
     agent any
 
     stages {
+        stage('01'){
+            git branch: 'main', url: 'https://github.com/Sam-2025/Test.git'
+        }
         
         stage('02') {
             steps {
