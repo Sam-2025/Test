@@ -2,11 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('01') {
-            steps {
-                git branch: 'main', url: 'https://github.com/Fardeen313/TERRAFORMPRACTICE.git'
-            }
-        }
+        
         stage('02') {
             steps {
                 dir('sample-ec2') {
